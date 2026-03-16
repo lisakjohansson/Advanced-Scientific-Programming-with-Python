@@ -1,6 +1,10 @@
 # Advanced-Scientific-Programming-with-Python
 
-This repository contains my work for the course Advanced Scientific Programming with Python.
+This repository contains my work, both the project and course exercises, for the course Advanced Scientific Programming with Python.
+
+## Project
+
+The course project can be found in the "project/" directory.
 
 ## Course exercises
 
@@ -38,10 +42,6 @@ https://github.com/uu-python/day5-datacontainers
 
 Solutions:
 - See "day5"
-
-## Project
-
-The course project can be found in the "project/" directory.
 
 ## Author
 Lisa Johansson
