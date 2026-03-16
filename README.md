@@ -9,7 +9,7 @@ This repository contains my work for the course Advanced Scientific Programming 
 
 # Structure
 
-- 'day1/' - solutions for day 1 exercises
+- "day1/" - solutions for day 1 exercises
 - "day2/" - solutions for day 2 exercises
 - "project/" - project work and related files
 
