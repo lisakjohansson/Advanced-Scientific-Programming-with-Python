@@ -1,7 +1,7 @@
-answer() counted dice instead of summing values
+- answer() counted dice, changed to summing of values
 
-runner was recreated every round, resetting game
+- runner was recreated every round, resetting game
 
-roll(dice) did nothing
+- roll(dice) did nothing
 
-quitting the game raised a weird exception
+- quitting the game raised a weird exception
