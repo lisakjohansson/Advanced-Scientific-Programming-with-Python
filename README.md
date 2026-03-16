@@ -13,4 +13,3 @@ This repository contains my work for the course Advanced Scientific Programming 
 - "day2/" - solutions for day 2 exercises
 - "project/" - project work and related files
 
-# By Lisa Johansson
