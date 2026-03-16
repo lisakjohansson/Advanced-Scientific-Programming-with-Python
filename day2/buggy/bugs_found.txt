@@ -1,0 +1,7 @@
+answer() counted dice instead of summing values
+
+runner was recreated every round, resetting game
+
+roll(dice) did nothing
+
+quitting the game raised a weird exception
