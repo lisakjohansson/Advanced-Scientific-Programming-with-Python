@@ -6,5 +6,5 @@ https://github.com/uu-python/day2-bestpractices-1/blob/master/exercises.md
 
 This repository contains my solutions to the exercises. More specifically,
 
-- the animals folder and "testAnimals.ipynb" is the solutions to "1. Creating a Python package"
+- the animals folder and "testAnimals.ipynb" are the solutions to "1. Creating a Python package"
 - 
