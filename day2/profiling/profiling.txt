@@ -1,0 +1,66 @@
+In general:
+
+- Ran it with cProfile to find the slow functions
+- Used line_profiler on the slowest functions
+- Used %timeit to compare before/after changes
+
+matmult.py: 
+
+Ran cProfile (python -m cProfile matmult.py). The total runtime is about 8.315 s. Printing (at the end of the script) alone is 0.710 s of that 
+and random number generation and list comprehensions are much smaller. Still a big part of the time left inside matmult.py:1(<module>). The 
+matrix multiplication maybe the main bottleneck. 
+
+Used line_profiler. Put the majority of the code in functions to be able to line profile. See “matmult_profiled.py” and “matmult_profiled.ipynb”.
+
+a) Investigate the performance of the matmult.py script.
+
+
+Question: 
+
+In which line(s) of the script would you start optimizing for speed?
+
+Answer: 
+
+When line profiler was applied to “matmult_profiled.py.”, the runtime was split into two functions, make_matrices and matmult. The runtime for 
+matmult was about 18.92 s and make_matrices about 0.43, so almost all the runtime is in matmult function at line 22.
+
+Should start optimizing for speed on lines 37-38 (# iterate through rows of Y) because it’s 99.8% of the total time of matmult. So the majority 
+of the time is spent in the innermost loop. Additionally, did profiling in the notebook “matmult_profiled.ipynb” using %lprun and it was obvious 
+that the hotspot is the innermost loop, which is consistent with the earlier results.
+
+c) Improve the performance of the matmult.py script.
+
+Question: 
+
+What is the best performance that you achieved with N=250?
+
+Answer:
+
+
+See “matmult_optimized.py”. First I removed the prints. Then I replaced everything inside matmult function with a numpy matrix multiplication 
+instead. So the total time of the matmult function went down to 0.021944 s. The main bottleneck now was the make_matrices function with a total 
+time of 0.454222 s and the building of the lists stood for about 50% of the total runtime each. 
+
+Generating a lot of random numbers, numpy can generate all in one vectorized call. Optimized the make_matrices function to to give full matrix of 
+random integers in one go. Now the total runtime of make_matrices dropped to 0.252991 s and line 14 (the random number generator)  took 94.2% of 
+the runtime.
+
+Now, when using %timeit in the “matmult_optimized.ipynb” notebook, the old version got:
+
+3.16 s ± 110 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+
+while the optimized version got:
+
+15.2 ms ± 179 µs per loop (mean ± std. dev. of 7 runs, 10 loops each) 
+
+euler72.py:
+
+Used line_profiler. 
+
+b) Investigate the performance of the euler72.py script
+
+Question: In which line(s) of the script would you start optimizing for speed? 
+
+When running “kernprof -l -v euler72.py”, it became obvious that the fast_phi function at line 51 takes the majority of the time (approx. 70% of 
+the total time). In that specific function, at line 53, the factors = factorize(n,primes) takes 88.9% of the functions runtime. Hence, I would 
+start optimizing the factorise() function at line 22. There, one can see that lines 26, 27 and 30 is where the most time is spent.
