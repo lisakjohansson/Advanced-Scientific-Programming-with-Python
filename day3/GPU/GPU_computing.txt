@@ -1,0 +1,3 @@
+Cupy was faster than numpy for all tested matrix sizes and the speed difference increased as the matrix size grows. This is because cupy uses GPU acceleration.
+
+When using float32, cupy became even faster, especially for larger matrices, since it is more efficient on the GPU.
