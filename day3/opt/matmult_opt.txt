@@ -1,0 +1,1 @@
+The matmult.py script from day2 was already optimized using numpy during day2, hence the same solution has been uploaded here.
