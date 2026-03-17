@@ -1,0 +1,2 @@
+MPI parallelization could not be completed due to issues with the local MPI installation. 
+Despite multiple attempts (including installing OpenMPI via Homebrew) the setup could not be successfully resolved.
