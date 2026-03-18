@@ -21,5 +21,5 @@ The main objective of this project is to analyze a few datasets across species a
 - Combine datasets from E. coli and P. aeruginosa, including both resistant and susceptible isolates
 - Plot single-cell growth rate trajectories over time in a time-evolution plot
 - Apply PCA to the combined dataset to identify dominant patterns in the growth dynamics
-- Investigate whether these patterns can be used to distinguish resistant and susceptible cells and to define a threshold or decision boundary between the two groups
+- Investigate whether these patterns can distinguish resistant and susceptible cells and explore the use of a simple classifier to define a preliminary decision boundary as a proof-of-concept
 
