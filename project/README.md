@@ -22,5 +22,5 @@ The main objective of this project is to build upon and improve existing Python 
 - Combine datasets from E. coli and P. aeruginosa, including both resistant and susceptible isolates
 - Implement functions for visualizing single-cell growth rate trajectories over time
 - Apply PCA to identify dominant patterns in the growth dynamics
-- Investigate whether these patterns can distinguish resistant and susceptible cells, and explore how early in the time series such separation becomes possible, using a simple classifier as a proof-of-concept. Eventuellt ta bort??? Kanske inte nödvändigt för det här projektet
+- Explore whether these patterns can distinguish resistant and susceptible cells, and investigate how early in the time series such separation becomes possible, using a simple classifier as a proof-of-concept
 
