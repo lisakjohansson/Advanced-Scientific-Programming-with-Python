@@ -4,7 +4,7 @@ This repository contains my work, both the project and course exercises, for the
 
 ## Project
 
-- "project" folder
+- See "project" folder
 
 ## Course exercises
 
