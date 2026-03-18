@@ -10,35 +10,35 @@ The course project can be found in the "project/" directory.
 
 ### Day 1
 Exercises:  
-https://github.com/uu-python/day1-basics/blob/master/exercises.md
+https://github.com/uu-python/day1-basics/exercises.md
 
 Solutions:
 - See "day1"
 
 ### Day 2 
 Exercises:  
-https://github.com/uu-python/day2-bestpractices-1
+https://github.com/uu-python/day2-bestpractices-1/exercises.md
 
 Solutions:
 - See "day2"
 
 ### Day 3 
 Exercises:  
-https://github.com/uu-python/day3-highperformance
+https://github.com/uu-python/day3-highperformance/exercises.md
 
 Solutions:
 - See "day3"
 
 ### Day 4 
 Exercises:
-https://github.com/uu-python/day4-bestpractices-2
+https://github.com/uu-python/day4-bestpractices-2/exercises.md
 
 Solutions:
 - See "day4"
 
 ### Day 5
 Exercises:
-https://github.com/uu-python/day5-datacontainers
+https://github.com/uu-python/day5-datacontainers/exercises.md
 
 Solutions:
 - See "day5"
