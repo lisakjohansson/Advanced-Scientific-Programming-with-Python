@@ -16,10 +16,11 @@ Python scripts are available for computing relative growth rates and visualizing
 
 **Project goals**
 
-The main objective of this project is to analyze a few datasets across species and resistance phenotypes. Specifically:
+The main objective of this project is to build upon and improve existing Python code for analyzing single-cell growth data and to apply it to a small set of datasets across species and resistance phenotypes. Specifically:
 
+- Organize existing Python scripts into a more structured and reusable analysis workflow
 - Combine datasets from E. coli and P. aeruginosa, including both resistant and susceptible isolates
-- Plot single-cell growth rate trajectories over time in a time-evolution plot
-- Apply PCA to the combined dataset to identify dominant patterns in the growth dynamics
+- Implement functions for visualizing single-cell growth rate trajectories over time
+- Apply PCA to identify dominant patterns in the growth dynamics
 - Investigate whether these patterns can distinguish resistant and susceptible cells and explore the use of a simple classifier to define a preliminary decision boundary as a proof-of-concept
 
